@@ -1,0 +1,35 @@
+<h1>list for the week</h1>
+
+<%= form_for @task do |f| %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :detail  %>
+    <%= f.text_field :detail, class: 'form-control' %>
+  </div>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
+
+
+<!-- <h1>list for the week</h1>
+
+<%#= form_for(@tasks_new) do |f| %>
+  <div class="form-group">
+    <%#= f.label :title %>
+    <%#= f.text_field :title, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%#= f.label :detail %>
+    <%#= f.text_field :detail, class: 'form-control' %>
+  </div>
+
+  <%#= f.submit class:ß 'btn btn-primary' %>
+<#% end %>
+
+
+tasks_new
+ -->
