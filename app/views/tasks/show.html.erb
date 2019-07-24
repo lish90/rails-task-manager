@@ -8,4 +8,4 @@
 <br>
   <%= link_to"edit task", edit_path(@task)%>
   <br>
-    <%= link_to"Remove Task", task_path(@task), method: :delete%>
+    <%= link_to"Remove Task", task_path(@task), method: :delete, data: { confirm: "Are you sure?" }%>
