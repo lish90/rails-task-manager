@@ -1,14 +1,14 @@
-<!-- <h1>What task do want to achieve today ? </h1> -->
+ <h1>'What task do want to achieve today ?' </h1>
 <h1><%= @task.title %></h1>
 <p><%= @task.detail %></p>
 
 <%= link_to "back to all Tasks",tasks_path   %>
 <br>
-<%#= link_to"competed", tasks_path %>
+<%= link_to"competed", tasks_path %>
 <br>
-  <%= link_to"edit task", edit_path(@task)%>
-  <br>
-    <%= link_to"Remove Task", task_path(@task), method: :delete, data: { confirm: "Are you sure?" }%>
+<%= link_to"edit task", edit_path(@task)%>
+<br>
+<%= link_to"Remove Task", task_path(@task), method: :delete, data: { confirm: "Are you sure?" }%>
 
 
 
