@@ -3,7 +3,7 @@
 <% @tasks.each do |task| %>
   <div style="border: 1px solid black;">
 
-  <h2><%= link_to "#{task.title}", task_path(task)%></h2>
+  <h2><%= link_to "#{task.title}", task_path(task), class: "my-link"%></h2>
     <p><%= task.detail %></p>
     <p><input type="checkbox" name="Completed" <%= "checked" if task.completed %>><%= link_to task.title, task_path(task) %> </p>
 
@@ -13,11 +13,17 @@
 
 <%= link_to"add task", new_path%>
 
-<% @tasks.each do |task| %>
-
-  <% end %>
 
 
 
+<script>
+
+  // const myFunc = () => {
+    // alert("I am alive!")
+  // }
+
+  // const links = document.querySelectorAll(".my-link")
+  // links.forEach(link => link.addEventListener("click", myFunc) )
+</script>
 
 
